@@ -1,0 +1,231 @@
+html {
+  scroll-behavior: smooth;
+}
+@import url('https://fonts.googleapis.com/css2?family=Story+Script&display=swap');
+
+/* Reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: rgb(0, 0, 0);
+    background-color: #000000;
+    line-height: 1.6;
+}
+
+/* --- HEADER INVISÍVEL / TRANSPARENTE --- */
+header {
+    width: 100%;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 20px 40px;
+}
+
+/* Container do Header para alinhar Logo na esquerda e Nav na direita */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ajuste do tamanho da imagem da Logo jojo */
+.jojo_size {
+    max-height: 90px;
+    width: auto;
+    display: block;
+    transition: 0.3s ease-in-out
+}
+
+.jojo_size:hover {
+    transform: scale(1.1);
+}
+
+ul {
+    font-family: "Story Script", cursive, sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    list-style-type: none;
+}
+ul, li{
+    transition: 0.3s ease-in-out;
+}
+ul, li:hover{
+    transform: scale(1.2);
+}
+span {
+    padding: 10px 15px;
+    border-radius: 15px;
+    font-family: "Story Script", cursive, sans-serif;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(252, 252, 252);
+    display: inline-flex;
+}
+
+
+.fundo {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    /* Trava o container na tela durante a rolagem */
+    top: 0;
+    left: 0;
+    z-index: -1;
+    /* Coloca a imagem Atrás de todo o conteúdo e do header */
+    overflow: hidden;
+}
+
+.resenha_jojo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Mantém a imagem cobrindo toda a tela sem distorcer */
+    object-position: center;
+    display: block;
+}
+
+
+.introdução1 {
+
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100vh;
+
+}
+
+.personalização {
+
+    display: flex;
+    width: 1300px;
+    margin-left: -1px;
+    gap: 10;
+
+}
+
+.texto1 {
+    background-color: rgba(248, 246, 93, 0.5);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 25px;
+    color: rgb(0, 0, 0);
+    transition: 0.3s ease-in-out;
+
+}
+
+.texto1:hover {
+    transform: scale(1.05);
+}
+
+.titulo1 {
+    text-align: center;
+    background-color: rgba(248, 246, 93, 0.5);
+    backdrop-filter: blur(8px);
+    padding: 5px;
+    border-radius: 25px;
+    color: rgb(0, 0, 0);
+    transition: 0.3s ease-in-out;
+}
+
+.titulo1:hover {
+    transform: scale(1.1);
+}
+
+.titulo3 {
+    justify-content: center;
+    background-color: rgba(235, 93, 248, 0.5);
+    backdrop-filter: blur(8px);
+    padding: 5px;
+    border-radius: 25px;
+    color: rgb(0, 0, 0);
+    transition: 0.3s ease-in-out;
+}
+
+.titulo3:hover {
+    transform: scale(1.1);
+}
+
+.texto3 {
+    background-color: rgba(235, 93, 248, 0.5);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 25px;
+    color: rgb(0, 0, 0);
+    transition: 0.3s ease-in-out;
+}
+
+.texto3:hover {
+    transform: scale(1.1);
+}
+
+.seila3 {
+    margin-left: 25px;
+    text-align: center;
+}
+
+.card
+{
+   background-color: rgba(232, 225, 49, 0.5);
+   backdrop-filter: blur(10px);
+   margin: 20px;
+   width: 1000px;
+   border-radius: 20px;
+}
+
+.card-img-top
+{
+    border-radius: 20px;
+}
+
+
+
+/* =============== PARTE 1 =================================================== */
+
+.texto_parte1 {
+    background-color: rgba(244, 238, 245, 0.5);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 25px;
+    color: rgb(0, 0, 0);
+    transition: 0.3s ease-in-out;
+    position: fixed;
+    width: 50%;
+    height: 79vh;
+}
+.texto_parte1:hover{
+    transform: scale(1.1);
+}
+.texto_parte1 div{
+    height: 70vh;
+    overflow: scroll;
+}
+
+.personalização_parte1 {
+    height: 735px;
+    display: flex;
+    width: 1000px;
+    margin-right: 1000px;
+    margin-top: 67px;
+    gap: 20;
+    overflow: auto;
+    overflow-y: auto;
+
+}
+
+.texto_parte1 div::-webkit-scrollbar {
+  width: 8px;
+  border-radius: 10px;
+}
